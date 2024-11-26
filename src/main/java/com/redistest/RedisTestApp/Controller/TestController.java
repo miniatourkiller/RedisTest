@@ -19,7 +19,7 @@ public class TestController {
     }
 
     @GetMapping("update-message/{messageId}/{message}")
-    public String updateMessage(@PathVariable int messageId, @PathVariable String message){
-        return service.updateMessage(messageId, message);
+    public void updateMessage(@PathVariable int messageId, @PathVariable String message){
+        service.updateMessage(messageId, message);
     }
 }
